@@ -1,5 +1,6 @@
 from django.contrib import messages, auth
 from django.contrib.auth.models import User
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.utils.datastructures import MultiValueDictKeyError
 
@@ -14,10 +15,10 @@ def login(request):
 
         if user is not None:
             auth.login(request,user)
-            return redirect('index')
+            return redirect('travelapp:index')
         else:
             messages.info(request,"invalid credentials")
-            return redirect("logged")
+            return HttpResponse("Invalid Credentials")
 
     return render(request,'login.html')
 
@@ -59,4 +60,5 @@ def register(request):
 
 def logout(request):
     auth.logout(request)
-    return render(request,'index.html')
+    return redirect('travelapp:index')
+    #return render(request,'index.html')

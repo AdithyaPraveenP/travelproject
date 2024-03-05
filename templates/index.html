@@ -33,7 +33,7 @@
                             <div class="logo"><a href="index.html">Travello</a></div>
                             <nav class="main_nav">
                                 <ul class="d-flex flex-row align-items-start justify-content-start">
-                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="">Home</a></li>
                                     <li><a href="contact.html">Contact</a></li>
 
                                     {% if user.is_authenticated %}
@@ -79,7 +79,7 @@
         </div>
         <div class="menu_content">
             <ul>
-                <li><a href="inex.html">Home</a></li>
+                <li><a href="travelapp/index">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="accounts/register">Register</a></li>
                 <li><a href="accounts/login">Login</a></li>
@@ -246,12 +246,89 @@
 
         <!-- Destinations -->
 
-        <div class="destinations" id="destinations">
-        <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <div class="section_subtitle">simply amazing places</div>
-                <div class="section_title"><h2>Popular Destinations</h2></div>
+
+<div class="container">
+<div class="row">
+<div class="col text-center">
+<div class="section_subtitle">simply amazing places</div>
+<div class="section_title"><h2>Popular Destinations</h2></div>
+</div>
+</div>
+<div class="row destinations_row">
+<div class="col">
+<div class="destinations_container item_grid" style="position: relative; height: 1186.73px;">
+
+<div class="destination item" style="position: absolute; left: 0px; top: 0px;">
+<div class="destination_image">
+<img src="{% static 'images/destination_1.jpg' %}" alt="">
+<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
+</div>
+<div class="destination_content">
+<div class="destination_title"><a href="destinations.html">Bali</a></div>
+<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+<div class="destination_price">From $679</div>
+</div>
+</div>
+
+<div class="destination item" style="position: absolute; left: 360px; top: 0px;">
+<div class="destination_image">
+<img src="{% static 'images/destination_2.jpg' %}" alt="">
+</div>
+<div class="destination_content">
+<div class="destination_title"><a href="destinations.html">Indonesia</a></div>
+<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+<div class="destination_price">From $679</div>
+</div>
+</div>
+
+<div class="destination item" style="position: absolute; left: 0px; top: 395px;">
+<div class="destination_image">
+<img src="{% static 'images/destination_3.jpg' %}" alt="">
+</div>
+<div class="destination_content">
+<div class="destination_title"><a href="destinations.html">San Francisco</a></div>
+<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+<div class="destination_price">From $679</div>
+</div>
+</div>
+
+<div class="destination item" style="position: absolute; left: 360px; top: 395px;">
+<div class="destination_image">
+<img src="{% static 'images/destination_3.jpg' %}" alt="">
+</div>
+<div class="destination_content">
+<div class="destination_title"><a href="destinations.html">Paris</a></div>
+<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+<div class="destination_price">From $679</div>
+</div>
+</div>
+
+<div class="destination item" style="position: absolute; left: 0px; top: 791px;">
+<div class="destination_image">
+<img src="{% static 'images/destination_5.jpg' %}" alt="">
+</div>
+<div class="destination_content">
+<div class="destination_title"><a href="destinations.html">Phi Phi Island</a></div>
+<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+<div class="destination_price">From $679</div>
+</div>
+</div>
+
+<div class="destination item" style="position: absolute; left: 360px; top: 791px;">
+<div class="destination_image">
+<img src="{% static 'images/destination_6.jpg' %}" alt="">
+</div>
+<div class="destination_content">
+<div class="destination_title"><a href="destinations.html">Mykonos</a></div>
+<div class="destination_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+<div class="destination_price">From $679</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
             </div>
         </div>
         <div class="row destinations_row">
@@ -301,38 +378,51 @@
                     <div class="testimonials_slider_container">
                         <div class="owl-carousel owl-theme testimonials_slider">
 
-                            <!-- Slide -->
                             <div class="owl-item text-center">
-                                <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+                                <div class="testimonial">Really Helpful go cool places for affordable price</div>
                                 <div class="testimonial_author">
                                     <div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-                                        <div>john turner,</div>
+                                        <div>Lena david</div>
+                                        <div> <img src="{% static 'images/team_1.jpg' %}" style="border-radius:50%"> </div>
                                         <div>client</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Slide -->
                             <div class="owl-item text-center">
-                                <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+                                <div class="testimonial">Just Amazing</div>
                                 <div class="testimonial_author">
                                     <div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-                                        <div>john turner,</div>
+                                        <div>David</div>
+                                        <div> <img src="{% static 'images/team_2.jpg' %}" style="border-radius:50%"> </div>
                                         <div>client</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Slide -->
                             <div class="owl-item text-center">
-                                <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+                                <div class="testimonial">Awesome place with cool price</div>
                                 <div class="testimonial_author">
                                     <div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-                                        <div>john turner,</div>
+                                        <div>Martin</div>
+                                        <div> <img src="{% static 'images/team_3.jpg' %}" style="border-radius:50%"> </div>
                                         <div>client</div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="owl-item text-center">
+                                <div class="testimonial">Top service</div>
+                                <div class="testimonial_author">
+                                    <div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
+                                        <div>Sethhills</div>
+                                        <div> <img src="{% static 'images/team_4.jpg' %}" style="border-radius:50%"> </div>
+                                        <div>client</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
 
                         </div>
                     </div>

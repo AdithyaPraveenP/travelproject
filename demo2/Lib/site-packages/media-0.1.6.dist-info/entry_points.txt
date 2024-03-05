@@ -1,0 +1,3 @@
+[console_scripts]
+media = media.run:run
+
